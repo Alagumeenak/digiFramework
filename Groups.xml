@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="GroupExecution">
+  <groups>
+  <run>
+  <include name="ST"></include>
+  <exclude name="FT"></exclude>
+  
+  </run>
+  
+  </groups>
+    <classes>
+      <class name="digi.DependTest"/>
+      <class name="digi.LoginTest"/>
+      <class name="digi.DemoTest"/>
+      <class name="digi.Reg"/>
+    </classes>
+  </test> <!-- GroupExecution -->
+</suite> <!-- Suite -->
