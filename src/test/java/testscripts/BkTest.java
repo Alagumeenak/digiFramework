@@ -40,6 +40,18 @@ public void book_002() {
 		
 		
 }
+@Test
+public void book_005() {
+		HomePage homepage=new HomePage(driver);
+		BookPage bookPage=new BookPage(driver);
+		homepage.getBookLink().click();	
+		test.log(LogStatus.INFO, "Clicked on Book link");
+		selectOptionByIndex(bookPage.getProduct(), 3);
+		selectOptionByVisibletext(bookPage.getPgsize(), "12");
+		selectOptionByVisibletext(bookPage.getView(), "List");
+		
+		
+}
 @Test(enabled=false)
 public void book_003() {
 	//switch to Flipkart window
