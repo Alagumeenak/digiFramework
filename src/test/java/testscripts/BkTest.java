@@ -36,9 +36,7 @@ public void book_002() {
 		test.log(LogStatus.INFO, "Clicked on Book link");
 		selectOptionByIndex(bookPage.getProduct(), 3);
 		selectOptionByVisibletext(bookPage.getPgsize(), "12");
-		selectOptionByVisibletext(bookPage.getView(), "List");
-		
-		
+		selectOptionByVisibletext(bookPage.getView(), "List");		
 }
 @Test
 public void book_005() {

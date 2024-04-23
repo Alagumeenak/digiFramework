@@ -35,6 +35,7 @@ public static ExtentTest test;
   public void beforesuite() {
 	  //ExtentReports report=new ExtentReports("./reports/report.html");
 	  reports=new ExtentReports("./report/"+getTime()+".html");
+	  //Report log
 	  Reporter.log("database connection successfull",true);
   }
   
@@ -47,6 +48,7 @@ public static ExtentTest test;
  // @Parameters({"browser","url"})
   @BeforeClass
   public void beforeclass() {
+	  //Launch browser
 	  String browser=FileUtility.getProrperty("browser");
 		 String url=FileUtility.getProrperty("url");
 	  if(browser.equalsIgnoreCase("chrome")) {
