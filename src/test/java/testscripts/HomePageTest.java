@@ -9,6 +9,9 @@ import genericLibrary.BaseClass;
 import genericLibrary.ExcelUtility;
 @Listeners(listenersUtility.ListenersImpl.class)
 public class HomePageTest extends BaseClass {
+	/**
+	 * this is used to search laptop
+	 */
 	@Test
 	public void home_001() {
 		HomePage homepage = new HomePage(driver);
@@ -17,7 +20,9 @@ public class HomePageTest extends BaseClass {
 		homepage.getSearchbutton().click();
 
 	}
-
+    /**
+     * scroll untill laptop image displays
+     */
 	public void home_002() {
 		HomePage homepage = new HomePage(driver);
 		scrollToElement(homepage.getLapTopImage());
@@ -26,6 +31,7 @@ public class HomePageTest extends BaseClass {
 	@Test
 	public void home_003() {
 		HomePage homepage = new HomePage(driver);
+		
 		scrollFromOrigin(homepage.getLapTopImage(), 0, 300);
 		scrollFromOrigin(homepage.getLapTopImage(), 0, -500);
 	}

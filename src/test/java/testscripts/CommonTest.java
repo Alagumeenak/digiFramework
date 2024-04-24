@@ -85,6 +85,9 @@ public class CommonTest extends BaseClass{
 		
 		                     }
 	    }
+	    /**
+	     * 
+	     */
 	
 		@Test
 		public void jewelry_001(){
@@ -96,6 +99,9 @@ public class CommonTest extends BaseClass{
 			Assert.assertEquals(jewelrypage.getHeartChainimg().isDisplayed(),true,"Black and diamond image is not displayed");
 			jewelrypage.getAddtocart().click();
 		}
+		/**
+		 * to add jewelry to cart
+		 */
 		@Test
 		public void addtocart_001(){
 			HomePage homePage=new HomePage(driver);
@@ -109,6 +115,10 @@ public class CommonTest extends BaseClass{
 			addtocartPage.getCheckout().click();
 			
 		}
+		/**
+		 * After cart to make payment
+		 * 
+		 */
 		public void checkout_001() {
 			HomePage homePage=new HomePage(driver);
 			CheckoutPage checkoutpage=new CheckoutPage(driver);

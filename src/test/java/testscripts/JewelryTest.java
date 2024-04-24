@@ -7,7 +7,11 @@ import ObjectRepository.ElectronicsPage;
 import ObjectRepository.HomePage;
 import ObjectRepository.JewelryPage;
 import genericLibrary.BaseClass;
-
+/**
+ * To add jewelry to cart
+ * @author Admin
+ *
+ */
 public class JewelryTest extends BaseClass {
 	@Test
 	public void jewelry() {

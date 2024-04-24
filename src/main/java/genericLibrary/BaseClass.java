@@ -25,7 +25,12 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
 import ObjectRepository.HomePage;
-
+/**
+ * This class is used to login & configure informations
+ * 
+ * @author Admin
+ * 
+ */
 public class BaseClass extends UtilityMethods {
  
 public WebDriver driver;
